@@ -1,0 +1,27 @@
+{
+  "name": "without-remote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neuxtron/without-remote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neuxtron/without-remote/issues"
+  },
+  "homepage": "https://github.com/Neuxtron/without-remote#readme",
+  "description": "",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "picocolors": "^1.1.1",
+    "socket.io": "^4.8.1"
+  }
+}
