@@ -20,7 +20,9 @@
   "homepage": "https://github.com/Neuxtron/without-remote#readme",
   "description": "",
   "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
     "http": "^0.0.1-security",
+    "loudness": "^0.4.2",
     "picocolors": "^1.1.1",
     "socket.io": "^4.8.1"
   }
