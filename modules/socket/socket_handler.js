@@ -16,6 +16,10 @@ const socketHandler = (io) => {
     socket.on("arrow_right", SocketController.onArrowRight)
     socket.on("arrow_fast_right", SocketController.onArrowFastRight)
 
+    socket.on("play_pause", SocketController.onPlayPause)
+
+    socket.on("space", SocketController.onSpace)
+
     socket.on("disconnect", SocketController.onDisconnect(socket.id))
   })
 }

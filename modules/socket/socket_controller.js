@@ -40,6 +40,14 @@ class SocketController {
     keyboard.type(Key.Right)
     keyboard.type(Key.Right)
   }
+
+  static onPlayPause = () => {
+    keyboard.type(Key.AudioPlay)
+  }
+
+  static onSpace = () => {
+    keyboard.type(Key.Space)
+  }
 }
 
 export default SocketController
