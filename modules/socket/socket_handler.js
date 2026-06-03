@@ -6,9 +6,11 @@ const socketHandler = (io) => {
   io.on("connection", (socket) => {
     console.log("Client connected:", socket.id);
 
+    //-------/ Volume /-------/
     socket.on("vol_up", SocketController.onVolUp)
     socket.on("vol_down", SocketController.onVolDown)
     
+    //-------/ Arrows /-------/
     socket.on("arrow_up", SocketController.onArrowUp)
     socket.on("arrow_down", SocketController.onArrowDown)
     socket.on("arrow_left", SocketController.onArrowLeft)
@@ -16,9 +18,13 @@ const socketHandler = (io) => {
     socket.on("arrow_right", SocketController.onArrowRight)
     socket.on("arrow_fast_right", SocketController.onArrowFastRight)
 
-    socket.on("play_pause", SocketController.onPlayPause)
-
+    //-------/ Other Keyboards /-------/
     socket.on("space", SocketController.onSpace)
+    socket.on("return", SocketController.onReturn)
+    
+    //-------/ Special /-------/
+    socket.on("play_pause", SocketController.onPlayPause)
+    socket.on("back", SocketController.onBack)
 
     socket.on("disconnect", SocketController.onDisconnect(socket.id))
   })
