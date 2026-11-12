@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.neux.without-remote",
   "build": {
-    "beforeDevCommand": "bun run dev",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build:server && npm run build",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "bun run build",
     "frontendDist": "../dist"
   },
   "app": {
@@ -30,6 +30,8 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "externalBin": ["binaries/node"],
+    "resources": {"../server/": "server/"}
   }
 }
